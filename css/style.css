@@ -1,0 +1,253 @@
+
+
+
+/** 
+ * Primary Drupal Styles
+ * Author: g-u-i.net
+ */
+
+body{font-size:16px; font-family: Arial, "MS Trebuchet", sans-serif;}
+
+
+a{color: #007BC2; text-decoration: none;}
+
+h1{font-size:1.6em;}
+h2{font-size:1.5em;}
+h3{font-size:1.4em;}
+h4{font-size:1.3em;}
+h5{font-size:1.2em;}
+h6{font-size:1.1em;}
+
+input{font-family: Arial, "MS Trebuchet", sans-serif; font-size:0.8em;}
+
+
+
+/** layout */
+#center, #sidebar-first, #sidebar-second, .footer-block .region, .header-block{ display:inline-block; vertical-align: top;}
+
+body.two-sidebars #center { width: 54%; }
+body.sidebar-first #center { width: 73%; }
+body.sidebar-second #center { width: 80%; }
+body.no-sidebars #center { width: 100%; }
+
+#sidebar-first { width: 24%; }
+#sidebar-second { width: 18%; }
+
+#header, #main, #footer{ padding:1em; }
+
+body{background-color: #DFDFDF;}
+
+#container{width:1024px; margin:0 auto; background-color: #FFF;}
+
+#header, #footer{background-color: #535353; color:#fff;}
+
+.block, .panel-pane{
+	border: 1px solid #D1D1D1;  padding:0.5em; margin:0.5em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #EAEAEA;
+}
+
+.footer-block .block{
+	background-color: #353535; border: 1px solid #1a1a1a;
+}
+#footer-bottom{ text-align: center;}
+#footer-bottom .block{ background-color: transparent; border: 0 solid #999; font-size:0.7em;}
+
+#content{padding:1em;}
+
+.logo h1, h1.page-title{font-size:2em;}
+
+#header ul.menu li, 
+#content-top ul.menu li, 
+#content-bottom ul.menu li, 
+#footer ul.menu li{display:inline-block; vertical-align:top; }
+
+.views-row{margin-bottom:1em;}
+
+.views-field-title{font-size:1.1em; font-weight:bold;}
+.views-field-title a{color: #444444; text-decoration:none;}
+
+li, .item-list ul li{list-style: none inside url(); margin-left:0;}
+
+/** Messages. */
+
+div.messages {
+  padding: 9px;
+  margin: 0.5em 0 0;
+  color: #036;
+  background: #bdf;
+  border: 1px solid #ace;
+	-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		
+}
+
+div.warning {
+  color: #840;
+  background: #fe6;
+  border-color: #ed5;
+}
+
+div.error {
+  color: #fff;
+  background: #e63;
+  border-color: #d52;
+}
+
+div.error p.error {
+  color: #333;
+}
+
+div.status {
+  color: #360;
+  background: #cf8;
+  border-color: #be7;
+}
+
+
+
+/** Tab navigation */
+
+ul.primary, .views-admin-links ul {
+	font:13px/1.231 sans-serif; *font-size:small;	
+  border-collapse: collapse;
+  padding: 0 0 0 1em; /* LTR */
+  white-space: nowrap;
+  list-style: none;
+  margin: 5px;
+  height: auto;
+  line-height: normal;
+  border-bottom: 1px solid #bbb;
+}
+ul.primary li, .views-admin-links li{
+  display: inline;
+		
+}
+ul.primary li a, .views-admin-links li a {
+  background-color: #ddd;
+  border-color: #bbb;
+  border-width: 1px;
+  border-style: solid solid none solid;
+  height: auto;
+  margin-right: 0.5em; /* LTR */
+  padding: 0 1em;
+  text-decoration: none;
+	-moz-border-radius-topleft: 5px;
+		-webkit-border-top-left-radius: 5px;
+		border-top-left-radius: 5px;
+	-moz-border-radius-topright: 5px;
+		-webkit-border-top-right-radius: 5px;
+		border-top-right-radius: 5px;
+}
+ul.primary li.active a {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-bottom: #fff 1px solid;
+}
+ul.primary li a:hover, .views-admin-links li a:hover{
+  background-color: #eee;
+  border-color: #ccc;
+  border-bottom-color: #eee;
+}
+
+ul.secondary {
+  border-bottom: 1px solid #bbb;
+  padding: 0.5em 1em;
+  margin: 5px;
+}
+ul.secondary li {
+  display: inline;
+  padding: 0 1em;
+  border-right: 1px solid #ccc; /* LTR */
+}
+ul.secondary a {
+  padding: 0;
+  text-decoration: none;
+}
+ul.secondary a.active {
+  border-bottom: 4px solid #999;
+}
+
+
+/** Form */
+
+#node-form .form-region-main{border-right: 1px solid #BFBFBF; padding-right:10px; width:68%;}
+#node-form .form-region-main label{float:left; min-width:25%;}
+#node-form .form-region-main input.form-text{width:40%;}
+
+#node-form .form-region-right{padding-left:5px;}
+#node-form .form-region-right label{float:left; min-width:35%;}
+#node-form .form-region-right input.form-text{width:60%;}
+
+#node-form .form-region-main label.option, #node-form .form-region-right label.option{float: none;}
+
+
+form:not(	#views-ui-config-item-form ) .form-item {
+    position:relative;
+/*    padding:9px;*/
+    }
+
+	form:not(	#views-ui-config-item-form ) .form-item .description{
+	  position:absolute;
+	  bottom:140%;
+/*	  right:-15px;*/
+	  z-index:5;
+		left:50%;
+	  color:#1A1A1A;
+		line-height:1.1;
+	  background:url(../images/popup.png) 50% 100% no-repeat;
+	  width:240px;
+	  margin:0px 0px -15px;
+	  padding:9px 10px 20px;
+	  display:none;
+		border-top: 1px solid #9F9F9F;
+	  }
+ form:not(	#views-ui-config-item-form )  .form-item:hover {
+    z-index:1;
+    height:auto; /* Fix for flicker in IE7 */
+    }
+ form:not(	#views-ui-config-item-form )  .form-item:hover > .description { display:block; }
+
+
+fieldset{
+	border: 1px solid #D4D4D4;
+	padding:10px;
+	margin-bottom:1em;
+	-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+}
+
+fieldset legend{
+	font-size:1.6em;
+}
+
+input.form-text{max-width:95%;}
+
+/** TABLE */
+
+table{width:100%; 
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+table thead th{
+	background-color: #CCC;
+	padding:0.5em 1em;
+	text-align: left;
+}
+table tbody tr.even, table tbody tr.odd{
+	border-bottom: 0 solid #CCCCCC;
+	padding: 0.1em 0.6em;
+}
+table tbody tr.even{background-color: #EEE;}
+table tbody tr.odd{background-color: #E5E5E5;}
+
+table tbody td{
+	padding:0.5em 1em;
+	text-align: left;
+}
+td.active {background-color: transparent;}

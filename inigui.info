@@ -1,0 +1,74 @@
+;----------// Theme informations
+
+name = "Inigui"
+description = "html5 init theme by <a href="http://www.g-u-i.net">g-u-i.net</a> strat with Beginning Web 2.0 by <a href="http://gazwal.com">gazwal.com</a> and inspired from <a href="http://html5boilerplate.com/">html5boilerplate.com</a>"
+version = "7.x-0.1"
+core = "7.x"
+engine = "phptemplate"
+
+
+
+;----------// Styles
+stylesheets[all][] = "css/normalize.css"
+stylesheets[all][] = "css/style.css"
+stylesheets[all][] = "css/nonsemantic.css"
+
+
+
+
+;----------// Scripts
+
+
+scripts[] = "js/script.js"
+
+
+
+
+;----------// Regions
+
+regions[header] = Header
+regions[headerblock_left] = Headerblock left
+regions[headerblock_middle] = Headerblock middle
+regions[headerblock_right] = Headerblock right
+
+regions[help] = Help
+regions[highlighted] = Highlighted
+
+regions[sidebar_first] = First sidebar
+regions[content_top] = Top content
+regions[content] = Content
+regions[content_bottom] = Bottom content
+regions[sidebar_second] = Second sidebar
+
+regions[footer_top] = Footer top
+regions[footer_left] = Footer left
+regions[footer_middle_left] = Footer middle left
+regions[footer_middle_right] = Footer middle right
+regions[footer_right] = Footer right
+regions[footer_bottom] = Footer bottom
+
+
+
+;----------// Features
+
+features[] = logo
+features[] = favicon
+features[] = name
+features[] = slogan
+features[] = search
+features[] = comment_user_picture
+features[] = main_menu
+features[] = secondary_menu
+
+
+;----------// Panels
+; Panels layouts. You can place multiple layouts under the "layouts" folder.
+
+plugins[panels][layouts] = layouts
+
+
+;----------// Theme Setting Defaults
+
+settings[layout_method]                     = '0'
+settings[layout_enable_settings]            = 'on'
+settings[layout_enable_method]              = 'on'
