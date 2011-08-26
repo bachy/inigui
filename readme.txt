@@ -1,0 +1,1 @@
+html5 strater theme by http://www.g-u-i.net inspired by http://html5boilerplate.com/

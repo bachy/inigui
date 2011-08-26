@@ -1,7 +1,7 @@
 ;----------// Theme informations
 
 name = "Inigui"
-description = "html5 init theme by <a href="http://www.g-u-i.net">g-u-i.net</a> strat with Beginning Web 2.0 by <a href="http://gazwal.com">gazwal.com</a> and inspired from <a href="http://html5boilerplate.com/">html5boilerplate.com</a>"
+description = "html5 strater theme by <a href="http://www.g-u-i.net">g-u-i.net</a> inspired by <a href="http://html5boilerplate.com/">html5boilerplate.com</a>"
 version = "7.x-0.1"
 core = "7.x"
 engine = "phptemplate"
